@@ -1,0 +1,77 @@
+.add-todo-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fddb92;
+	height: 9vh;
+	width: 9vh;
+	position: fixed;
+	top: 90vh;
+	left: 86vw;
+	font-size: 40px;
+	color: #52472f;
+	border-radius: 15px;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.add-todo-button--cross {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff663b;
+	font-size: 27px;
+	text-align: center;
+	cursor: pointer;
+	padding: 0px 0px 3px 0;
+}
+
+.add-input-button {
+	position: absolute;
+	border-radius: 15px;
+	width: 10vw;
+	height: 100%;
+	font-family: "Play", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	background-color: coral;
+	z-index: 998;
+	right: 0;
+	cursor: pointer;
+}
+
+.todo-remove-btn {
+	width: 3vh;
+	height: 3vh;
+	background-color: coral;
+	color: black;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+@media (max-width: 768px) {
+	.add-todo-button--cross {
+		font-size: 20px;
+	}
+
+	.add-input-button {
+		width: 16vw;
+	}
+}
+
+@media (max-width: 480px) {
+	.add-todo-button {
+		left: 75vw;
+	}
+
+	.add-todo-button--cross {
+		font-size: 14px;
+		padding: 0;
+	}
+
+	.add-input-button {
+		width: 22vw;
+	}
+}

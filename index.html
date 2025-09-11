@@ -10,10 +10,11 @@
 			rel="stylesheet"
 		/>
 		<script src="main.js" type="module" defer></script>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="index.css" />
 		<title>Todo app</title>
 	</head>
 	<body>
+		<div data-blur-background></div>
 		<header class="header">Задачи</header>
 		<div class="wrapper">
 			<input
@@ -22,7 +23,6 @@
 				placeholder="Найти..."
 				data-search-input
 			/>
-			<button type="button" class="add-todo-button" data-add-button>+</button>
 			<div class="add-input-container" data-add-input-container></div>
 
 			<div class="todo-list-container" data-todo-list-container></div>
@@ -31,14 +31,15 @@
 				<div class="todo">
 					<input type="checkbox" class="todo-checkbox" data-todo-checkbox />
 					<div class="todo-info">
-						<span class="todo-date" data-todo-date>24.02.02</span>
+						<div class="todo-date" data-todo-date>24.02.02</div>
 						<p class="todo-text" data-todo-text></p>
 					</div>
 					<button type="button" class="todo-remove-btn" data-remove-btn>
-						x
+						&#10006;
 					</button>
 				</div>
 			</template>
 		</div>
+		<button type="button" class="add-todo-button" data-add-button>+</button>
 	</body>
 </html>

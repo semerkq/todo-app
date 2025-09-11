@@ -1,0 +1,20 @@
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-weight: 500;
+	padding: 5vh 0 0 0;
+}
+
+@media (max-width: 768px) {
+	.header {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		font-size: 24px;
+	}
+}
